@@ -1,5 +1,4 @@
 import '../Курсы.css'
-import '../script.js';
 function Курсы() {
     return (
       <>

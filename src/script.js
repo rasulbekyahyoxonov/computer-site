@@ -8,4 +8,4 @@ active.forEach(element => {
         this.classList.add('active-a')
     })
 })
-console.log(window.location);
+
