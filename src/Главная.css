@@ -338,6 +338,7 @@ input:focus {
 .prm-h1 {
     padding-top: 30px;
     margin-left: 0;
+    text-align: center;
 }
 .prm-p {
     text-align: center;
