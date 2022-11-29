@@ -1,6 +1,5 @@
 import './App.css';
-import './script.js';
-import { Route, Routes, Link } from 'react-router-dom'
+import { Route, Routes, Link, NavLink } from 'react-router-dom'
 import Главная from './page/Главная'
 import Курсы from './page/Курсы'
 import Расписание from './page/Расписание'
@@ -16,6 +15,8 @@ function App() {
     document.querySelector('.nav-link').classList.toggle('nav-link-toggle');
     document.querySelector('.dark-div').classList.toggle('dark-div-toggle');
   }
+
+  const setActive = ({isActive}) => isActive ? 'active-a' : ''
 
   return (
     <>
@@ -33,12 +34,12 @@ function App() {
               <div className='hamburger dx'></div>
           </div>
           <ul className='nav-ul'>
-            <li><Link to='/' className='nav-a active-a'>Главная</Link></li>
-            <li><Link to='/Курсы' className='nav-a'>Курсы</Link></li>
-            <li><Link to='/Расписание' className='nav-a'>Расписание</Link></li>
-            <li><Link to='' className='nav-a'>Преподаватели</Link></li>
-            <li><Link to='' className='nav-a'>Рассылка</Link></li>
-            <li><Link to='' className='nav-a'>Контакты</Link></li>
+            <li><NavLink to='/' className={setActive}>Главная</NavLink></li>
+            <li><NavLink to='/Курсы' className={setActive}>Курсы</NavLink></li>
+            <li><NavLink to='/Расписание' className={setActive}>Расписание</NavLink></li>
+            <li><NavLink>Преподаватели</NavLink></li>
+            <li><NavLink>Рассылка</NavLink></li>
+            <li><NavLink>Контакты</NavLink></li>
           </ul>
           <Link to='/' className='btn-shop-a'>
             <button className='btn-shop'>Зайти в кабинет</button>

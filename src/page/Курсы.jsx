@@ -1,4 +1,5 @@
 import '../Курсы.css'
+
 function Курсы() {
     return (
       <>

@@ -1,5 +1,4 @@
 import '../Главная.css'
-import '../script.js';
 import '../media.css'
 import image1 from '../pictures/image.png'
 import logo1 from '../pictures/icon-1.png'
@@ -289,7 +288,16 @@ function Главная() {
             </form>
             <div className='submit-icons'>
               <div>
-                
+                <i class="fab fa-vk"></i>
+              </div>
+              <div>
+                <i class="fab fa-youtube"></i>
+              </div>
+              <div>
+                <i class="fab fa-facebook-f"></i>
+              </div>
+              <div>
+                <i class="fab fa-instagram"></i>
               </div>
             </div>
           </div>
